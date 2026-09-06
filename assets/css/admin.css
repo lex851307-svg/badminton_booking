@@ -1,0 +1,461 @@
+.admin-section {
+    min-height: 720px;
+    padding: 55px 0 85px;
+}
+
+.admin-heading {
+    margin-bottom: 24px;
+}
+
+.admin-heading h1 {
+    font-size: 36px;
+}
+
+.admin-heading p {
+    color: var(--muted);
+}
+
+.admin-tabs {
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.admin-tabs a {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 2px 12px;
+}
+
+.admin-tabs a:hover,
+.admin-tabs a.active {
+    color: var(--blue);
+}
+
+.admin-tabs a.active {
+    border-bottom: 3px solid var(--blue);
+}
+
+.stats-grid {
+    display: grid;
+    gap: 17px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 26px;
+}
+
+.stat-card {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 13px;
+    display: flex;
+    gap: 14px;
+    padding: 20px;
+}
+
+.stat-card > span {
+    background: #e8f3ff;
+    border-radius: 10px;
+    display: grid;
+    font-size: 22px;
+    height: 46px;
+    place-items: center;
+    width: 46px;
+}
+
+.stat-card small,
+.stat-card strong {
+    display: block;
+}
+
+.stat-card small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.stat-card strong {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.admin-panel {
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.panel-heading {
+    align-items: center;
+    border-bottom: 1px solid #e9edef;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 22px;
+}
+
+.panel-heading h2 {
+    font-size: 19px;
+}
+
+.panel-heading p {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.panel-heading a {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.admin-table {
+    border-collapse: collapse;
+    min-width: 800px;
+    width: 100%;
+}
+
+.admin-table th,
+.admin-table td {
+    border-bottom: 1px solid #edf0f2;
+    padding: 15px 18px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background: #f8fafb;
+    color: #66737c;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.admin-table td {
+    font-size: 12px;
+}
+
+.admin-table tbody tr:hover {
+    background: #fbfcfd;
+}
+
+.admin-table small {
+    color: var(--muted);
+}
+
+.code-text {
+    color: var(--blue);
+}
+
+.admin-status {
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 9px;
+    white-space: nowrap;
+}
+
+.status-pending {
+    background: #fff0d6;
+    color: #85520f;
+}
+
+.status-confirmed {
+    background: #ddf5e8;
+    color: #12643c;
+}
+
+.status-cancelled {
+    background: #f3e3e3;
+    color: #963535;
+}
+
+.status-completed {
+    background: #e2eef8;
+    color: #315f84;
+}
+
+.admin-empty {
+    color: var(--muted);
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.admin-filter {
+    align-items: end;
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 13px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr auto auto;
+    margin-bottom: 22px;
+    padding: 20px;
+}
+
+.admin-filter .button {
+    height: 48px;
+}
+
+.reset-button {
+    background: #edf1f4;
+    color: #4d5b65;
+}
+
+.booking-admin-table {
+    min-width: 930px;
+}
+
+.status-form {
+    display: flex;
+    gap: 6px;
+}
+
+.status-form select {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 11px;
+    height: 34px;
+    padding: 0 7px;
+}
+
+.status-form button {
+    background: var(--blue);
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+@media (max-width: 900px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.court-admin-layout {
+    align-items: start;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 360px 1fr;
+}
+
+.court-form-card {
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.court-form-card h2 {
+    font-size: 20px;
+}
+
+.court-form-card > p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.admin-field {
+    margin-bottom: 15px;
+}
+
+.admin-field input,
+.admin-field select,
+.admin-field textarea {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 11px;
+    width: 100%;
+}
+
+.admin-field input,
+.admin-field select {
+    height: 44px;
+}
+
+.admin-field input[type="file"] {
+    background: #f7f9fb;
+    height: auto;
+    padding: 8px;
+}
+
+.admin-field textarea {
+    resize: vertical;
+}
+
+.admin-field input:focus,
+.admin-field select:focus,
+.admin-field textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.1);
+    outline: none;
+}
+
+.field-error {
+    color: #a12828;
+    display: block;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.field-hint {
+    color: var(--muted);
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.current-court-image {
+    border-radius: 9px;
+    display: block;
+    height: 130px;
+    margin-bottom: 9px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.court-form-card .form-error {
+    background: #ffe7e7;
+    border-radius: 8px;
+    color: #982323;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+}
+
+.court-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.court-form-actions .button {
+    min-height: 43px;
+    padding: 0 15px;
+}
+
+.court-list-panel {
+    min-width: 0;
+}
+
+.admin-court-list {
+    display: grid;
+}
+
+.admin-court-item {
+    align-items: center;
+    border-bottom: 1px solid #edf0f2;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 56px 1fr;
+    padding: 17px 20px;
+}
+
+.admin-court-item:last-child {
+    border-bottom: 0;
+}
+
+.admin-court-icon {
+    background: #e7f2ff;
+    border-radius: 10px;
+    display: grid;
+    font-size: 23px;
+    height: 50px;
+    place-items: center;
+    width: 50px;
+    overflow: hidden;
+}
+
+.admin-court-icon img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.admin-court-info {
+    align-items: center;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr auto 90px auto;
+}
+
+.admin-court-info h3 {
+    font-size: 15px;
+}
+
+.admin-court-info p,
+.admin-court-info small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.court-status {
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 5px 8px;
+    white-space: nowrap;
+}
+
+.court-status-active {
+    background: #def5e8;
+    color: #14673f;
+}
+
+.court-status-maintenance {
+    background: #fff0d6;
+    color: #85520f;
+}
+
+.court-status-inactive {
+    background: #eceff1;
+    color: #59666e;
+}
+
+.edit-court-link {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .court-admin-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .admin-court-info {
+        align-items: start;
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+}
+
+@media (max-width: 620px) {
+    .admin-tabs {
+        gap: 17px;
+        overflow-x: auto;
+    }
+
+    .admin-tabs a {
+        white-space: nowrap;
+    }
+
+    .stats-grid,
+    .admin-filter {
+        grid-template-columns: 1fr;
+    }
+}

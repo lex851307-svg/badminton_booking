@@ -1,0 +1,245 @@
+.account-section {
+    min-height: 700px;
+    padding: 60px 0 85px;
+}
+
+.account-container,
+.edit-account-container {
+    max-width: 1000px;
+}
+
+.profile-card {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 16px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto 1fr auto;
+    padding: 28px;
+}
+
+.profile-avatar {
+    background: linear-gradient(135deg, var(--blue), var(--green));
+    border-radius: 50%;
+    color: #fff;
+    display: grid;
+    font-size: 30px;
+    font-weight: 800;
+    height: 76px;
+    place-items: center;
+    width: 76px;
+}
+
+.profile-role {
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.profile-main h1 {
+    font-size: 27px;
+}
+
+.profile-main p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.account-stats {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 22px 0;
+}
+
+.account-stats article {
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.account-stats small,
+.account-stats strong {
+    display: block;
+}
+
+.account-stats small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.account-stats strong {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.account-panel,
+.edit-card {
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 14px;
+}
+
+.account-panel-heading {
+    align-items: center;
+    border-bottom: 1px solid #e9edef;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 22px;
+}
+
+.account-panel-heading h2 {
+    font-size: 19px;
+}
+
+.account-panel-heading p {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.account-panel-heading a,
+.account-back {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recent-booking-list article {
+    align-items: center;
+    border-bottom: 1px solid #edf0f2;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 180px auto;
+    padding: 16px 22px;
+}
+
+.recent-booking-list article:last-child {
+    border-bottom: 0;
+}
+
+.recent-booking-list small,
+.recent-booking-list strong {
+    display: block;
+}
+
+.recent-booking-list small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.recent-booking-list h3 {
+    font-size: 15px;
+}
+
+.recent-booking-list strong {
+    font-size: 12px;
+}
+
+.account-status {
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 9px;
+}
+
+.status-pending {
+    background: #fff0d6;
+    color: #85520f;
+}
+
+.status-confirmed {
+    background: #ddf5e8;
+    color: #12643c;
+}
+
+.status-cancelled {
+    background: #f3e3e3;
+    color: #963535;
+}
+
+.status-completed {
+    background: #e2eef8;
+    color: #315f84;
+}
+
+.account-empty {
+    color: var(--muted);
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.edit-heading {
+    margin: 20px 0 25px;
+}
+
+.edit-heading h1 {
+    font-size: 32px;
+}
+
+.edit-heading p {
+    color: var(--muted);
+}
+
+.edit-account-grid {
+    align-items: start;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.edit-card {
+    padding: 25px;
+}
+
+.edit-card h2 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.account-field {
+    margin-bottom: 16px;
+}
+
+.account-field input {
+    height: 47px;
+}
+
+.field-error {
+    color: #a12828;
+    display: block;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+@media (max-width: 760px) {
+    .profile-card {
+        align-items: start;
+        grid-template-columns: auto 1fr;
+    }
+
+    .profile-card .button {
+        grid-column: 1 / -1;
+    }
+
+    .account-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .edit-account-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile-card,
+    .recent-booking-list article {
+        grid-template-columns: 1fr;
+    }
+
+    .account-stats {
+        grid-template-columns: 1fr;
+    }
+}

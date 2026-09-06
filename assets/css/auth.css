@@ -1,0 +1,153 @@
+.auth-section {
+    background:
+        radial-gradient(circle at top left, rgba(22, 119, 255, 0.12), transparent 32%),
+        var(--background);
+    min-height: 680px;
+    padding: 70px 20px;
+}
+
+.auth-card {
+    background: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 34px;
+}
+
+.auth-card-wide {
+    max-width: 680px;
+}
+
+.auth-heading {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.auth-icon {
+    background: #e8f3ff;
+    border-radius: 50%;
+    display: grid;
+    font-size: 28px;
+    height: 58px;
+    margin: 0 auto 14px;
+    place-items: center;
+    width: 58px;
+}
+
+.auth-heading h1 {
+    font-size: 27px;
+}
+
+.auth-heading p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.auth-field {
+    margin-bottom: 18px;
+}
+
+.auth-field input {
+    height: 50px;
+}
+
+.form-row {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.field-error {
+    color: #b52828;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-error {
+    background: #ffe7e7;
+    border-radius: 8px;
+    color: #982323;
+    font-size: 13px;
+    margin-bottom: 18px;
+    padding: 11px 13px;
+}
+
+.auth-submit {
+    margin-top: 4px;
+    width: 100%;
+}
+
+.auth-switch {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.auth-switch a {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.forgot-link {
+    color: var(--blue);
+    display: block;
+    font-size: 11px;
+    margin-top: 6px;
+    text-align: right;
+}
+
+.reset-message {
+    background: #e4f6ec;
+    border-radius: 9px;
+    color: #175f3d;
+    font-size: 13px;
+    padding: 14px;
+}
+
+.reset-message p {
+    margin-top: 3px;
+}
+
+.demo-link {
+    background: #fff3d9;
+    border-radius: 9px;
+    margin-top: 14px;
+    padding: 14px;
+}
+
+.demo-link small,
+.demo-link a {
+    display: block;
+}
+
+.demo-link small {
+    color: #72521c;
+    font-size: 10px;
+}
+
+.demo-link a {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+@media (max-width: 620px) {
+    .auth-section {
+        padding: 40px 16px;
+    }
+
+    .auth-card {
+        padding: 26px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

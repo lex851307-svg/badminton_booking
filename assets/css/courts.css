@@ -1,0 +1,406 @@
+.page-banner {
+    background: linear-gradient(120deg, #102b3d, #08748d);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.page-banner h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+}
+
+.page-banner p {
+    color: #d9eaf1;
+    margin-top: 8px;
+}
+
+.court-list-section,
+.court-detail-section {
+    min-height: 650px;
+    padding: 55px 0 80px;
+}
+
+.court-filter {
+    align-items: end;
+    background: #fff;
+    border: 1px solid #e1e7eb;
+    border-radius: 14px;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr 1fr auto;
+    padding: 22px;
+}
+
+.court-filter .button {
+    height: 48px;
+}
+
+.result-heading {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 22px;
+}
+
+.result-heading h2 {
+    font-size: 25px;
+}
+
+.result-heading p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.result-heading > strong {
+    background: #e5f2ff;
+    border-radius: 20px;
+    color: var(--blue);
+    font-size: 13px;
+    padding: 7px 13px;
+}
+
+.court-list-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.list-court-card {
+    background: #fff;
+    border: 1px solid #e2e8ec;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    overflow: hidden;
+}
+
+.court-cover,
+.detail-cover {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.court-cover img,
+.detail-cover img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.court-cover span,
+.detail-cover span {
+    font-size: 58px;
+    transform: rotate(-15deg);
+}
+
+.court-cover-1 {
+    background: linear-gradient(145deg, #d8f5eb, #6ec7ab);
+}
+
+.court-cover-2 {
+    background: linear-gradient(145deg, #dbefff, #79b8ed);
+}
+
+.court-cover-3 {
+    background: linear-gradient(145deg, #fff0cc, #e8bb62);
+}
+
+.list-court-body {
+    padding: 24px;
+}
+
+.court-name-row,
+.list-court-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.court-name-row h2 {
+    font-size: 23px;
+}
+
+.court-location {
+    color: var(--blue);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.availability {
+    background: #def6e9;
+    border-radius: 20px;
+    color: #146a42;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 11px;
+}
+
+.availability.full {
+    background: #f2e5e5;
+    color: #992f2f;
+}
+
+.court-description {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 15px 0 22px;
+}
+
+.list-court-footer {
+    border-top: 1px solid #edf0f2;
+    padding-top: 17px;
+}
+
+.list-court-footer strong,
+.detail-price {
+    color: var(--blue);
+    font-size: 21px;
+}
+
+.list-court-footer small,
+.detail-price small {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.list-court-footer .button {
+    min-height: 42px;
+    padding: 0 16px;
+}
+
+.empty-state {
+    background: #fff;
+    border: 1px dashed #cbd5dc;
+    border-radius: 14px;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.empty-state span {
+    font-size: 40px;
+}
+
+.empty-state h2 {
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.empty-state p {
+    color: var(--muted);
+}
+
+.back-link {
+    color: var(--blue);
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.court-detail-grid {
+    background: #fff;
+    border: 1px solid #e2e8ec;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    min-height: 330px;
+    overflow: hidden;
+}
+
+.detail-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.detail-info h1 {
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.detail-info > p:not(.court-location) {
+    color: var(--muted);
+    margin: 17px 0 24px;
+}
+
+.schedule-card {
+    background: #fff;
+    border: 1px solid #e2e8ec;
+    border-radius: 16px;
+    margin-top: 26px;
+    padding: 28px;
+}
+
+.schedule-heading {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.schedule-heading h2 {
+    font-size: 24px;
+}
+
+.schedule-heading p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.schedule-heading label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.schedule-heading input {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    height: 43px;
+    padding: 0 10px;
+}
+
+.slot-grid {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.time-slot {
+    align-items: center;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 68px;
+}
+
+.time-slot strong {
+    font-size: 15px;
+}
+
+.time-slot span {
+    font-size: 11px;
+}
+
+.time-slot.available {
+    background: #e5f3ff;
+    border: 1px solid #b9ddff;
+    color: #075daf;
+}
+
+.time-slot.available:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+.time-slot.selectable {
+    cursor: pointer;
+    position: relative;
+}
+
+.time-slot.selectable input {
+    opacity: 0;
+    position: absolute;
+}
+
+.time-slot.selectable:has(input:checked) {
+    background: var(--blue);
+    box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.16);
+    color: #fff;
+}
+
+.slot-selection-footer,
+.slot-login-notice {
+    align-items: center;
+    background: #f5f8fa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 14px 16px;
+}
+
+.slot-selection-footer span,
+.slot-login-notice span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.multi-slot-submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    transform: none;
+}
+
+.time-slot.booked {
+    background: #f0f1f2;
+    color: #969fa5;
+}
+
+.maintenance-notice {
+    background: #fff0dd;
+    border-radius: 8px;
+    color: #875113;
+    padding: 15px;
+}
+
+@media (max-width: 850px) {
+    .list-court-card {
+        grid-template-columns: 190px 1fr;
+    }
+
+    .court-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-cover {
+        min-height: 260px;
+    }
+
+    .slot-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .court-filter,
+    .list-court-card {
+        grid-template-columns: 1fr;
+    }
+
+    .court-cover {
+        min-height: 190px;
+    }
+
+    .court-name-row,
+    .list-court-footer,
+    .schedule-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .detail-info {
+        padding: 28px 22px;
+    }
+
+    .schedule-card {
+        padding: 22px 18px;
+    }
+
+    .slot-selection-footer,
+    .slot-login-notice {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .slot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
